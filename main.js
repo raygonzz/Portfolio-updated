@@ -45,4 +45,23 @@ document.addEventListener("mousemove", function(event) {
     let blue = Math.round((1 - x) * 255);
 
     document.querySelector(".header-text").style.color = `rgb(${red}, ${green}, ${blue})`;
+    document.querySelector(".position").style.color = `rgb(${red}, ${green}, ${blue})`;
+
+});
+
+document.querySelectorAll('.image-hover-effect').forEach(image => {
+    image.addEventListener('mousemove', (e) => {
+        const rect = image.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5; // Normalize (-0.5 to 0.5)
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        
+        const rotateX = y * 20;  // Tilt up/down
+        const rotateY = -x * 20; // Tilt left/right
+        
+        image.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
+    });
+
+    image.addEventListener('mouseleave', () => {
+        image.style.transform = 'perspective(500px) rotateX(0) rotateY(0) scale(1)'; // Reset
+    });
 });
