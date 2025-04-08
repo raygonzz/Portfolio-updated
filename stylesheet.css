@@ -16,7 +16,6 @@ html {
     --background: #26262c;
     --primary: #73f440;
     --secondary: #a9afb5;
-    --gradient: linear-gradient(90deg, #73f440, #a9afb5);
     --font-sans: 'Jersey';
     --font-serif: 'Montserrat';
     background: var(--background);
@@ -39,18 +38,16 @@ body, ul, li {
     transition: color 0.2s ease;
     color: var(--primary);
 }
-<<<<<<< Updated upstream
-=======
 .header-block h4 {
     font-family: var(--font-sans), sans-serif;
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     margin-top: -1rem;
     margin-bottom: 0;
     transition: color 0.2s ease;
     color: var(--primary);
+    margin-left: 10rem;
 }
->>>>>>> Stashed changes
 
 .header-block {
     text-align: center;
@@ -66,7 +63,7 @@ body, ul, li {
 .nav-block {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .nav-links {
@@ -77,6 +74,7 @@ body, ul, li {
 .nav-links li {
     text-transform: uppercase;
     margin: 0 1rem;
+    margin-top: 2rem;
 }
 
 .nav-links a {
@@ -124,7 +122,7 @@ body, ul, li {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 
 .bergo_cover {
@@ -179,13 +177,6 @@ body, ul, li {
     font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        display: none;
-    }
-}
-
 #pdfContainer {
     position: relative;
     width: 100%;
@@ -238,23 +229,13 @@ p {
     margin-bottom: 0;
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    margin-top: 10rem;
-}
-
 .mast-text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 30rem;
+    max-width: 50vw;
     margin: 0 auto;
-<<<<<<< Updated upstream
-=======
     margin-top: 3rem;
     line-height: 30px;
 }
@@ -273,10 +254,6 @@ p {
     color: var(--primary);
 }
 
-.footer ul {
-  list-style-type: none;
-}
-
 .me {
   max-width: 30vw;
   max-height: 70vh;
@@ -290,6 +267,8 @@ h2 {
   font-size: 2.5rem;
   color: var(--primary);
   letter-spacing: 3px;
+    text-shadow: 0 0 1px rgba(115, 244, 64, 0.7), 
+                 0 0 5px rgba(115, 244, 64, 0.5); /* Softer glow */
 }
 
 .about-me {
@@ -388,33 +367,6 @@ h2 {
     background: #4a9b26;
 }
 
-.resume_button {
-  display: flex;
-  justify-content: center;
-}
-
-.download_resume {
-  background: var(--primary);
-  color: whitesmoke;
-  border: none;
-  padding: 10px 15px;
-  font-size: 18px;
-  font-family: var(--font-serif);
-  cursor: pointer;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease-in-out;
-  display: inline-block;
-  width: auto;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.download_resume:hover {
-  background-color: #4a9b26;
-}
-
-
 .image-hover-effect {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -437,50 +389,24 @@ h2 {
   margin-top: 2rem;
 }
 
-.resume h3 {
+.resume {
+  font-family: var(--font-serif);
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.resume  h3 {
   text-align: left;
   margin-bottom: 0;
-  font-family: var(--font-sans);
-  margin-top: 0;
-  font-size: 48px;
-}
-
-.resume-header {
-  font-family: var(--font-sans);
-  width: 50rem;
-  margin: 0 auto;
-}
-
-.resume-education {
   font-family: var(--font-serif);
-  width: 50rem;
-  margin: 0 auto;
-}
-
-.resume-skills {
-  font-family: var(--font-serif);
-  width: 50rem;
-  margin: 0 auto; 
-}
-
-.resume-experience {
-  font-family: var(--font-serif);
-  width: 50rem;
-  margin: 0 auto; 
-}
-
-.resume-experience2 {
-  font-family: var(--font-serif);
-  width: 50rem;
-  margin: 0 auto; 
+    margin-top: 0;
 }
 
 h3:first-child {
-  font-size: 48px;
+  font-size: 50px;
 }
 
 #resume-divider {
-  display: flex;
     width: 50%;
     height: 2px;
     background-color: var(--primary);
@@ -495,73 +421,4 @@ h3:first-child {
     background-color: var(--primary);
     margin: 0 auto;
     margin-top: 1rem;
-}
-
-@media screen and (min-width: 1441px) and (max-width: 3000px) {
-
-  .about-me {
-    display: flex;
-    justify-content: center;
-  }
-
-.about-text {
-  font-family: var(--font-serif);
-  max-width: 35vw;
-  line-height: 30px;
-}
-
-img.me {
-  margin-left: -5rem;
-  max-height: 650px;
-}
-
-.games, .movies, .books {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.movies img {
-  max-width: 300px;
-  max-height: 445px;
-  margin-bottom: 50px;
-}
-
-.games img{
-  max-width: 300px;
-  max-height: 445px;
-  margin-bottom: 50px;
-}
-
-.books img {
-  max-width: 300px;
-  max-height: 445px;
-  margin-bottom: 50px;
-}
-
-
-  body {
-    font-size: 1.25rem;
-    max-width: 2000px;
-    margin: 0 auto;
-  }
-
-}
-
-
-.resume-skills h3 {
-  font-family: var(--font-sans);
-  font-size: 48px;
-}
-
-.plang {
-  font-weight: bold;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

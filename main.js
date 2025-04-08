@@ -45,4 +45,6 @@ document.addEventListener("mousemove", function(event) {
     let blue = Math.round((1 - x) * 255);
 
     document.querySelector(".header-text").style.color = `rgb(${red}, ${green}, ${blue})`;
+    document.querySelector(".header-text2").style.color = `rgb(${red}, ${green}, ${blue})`;
+
 });

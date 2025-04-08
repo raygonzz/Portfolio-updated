@@ -1,0 +1,548 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jersey';
+    src: url(Fonts/Jersey_10/Jersey10-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    --background: #26262c;
+    --primary: #73f440;
+    --secondary: #a9afb5;
+    --gradient: linear-gradient(90deg, #73f440, #a9afb5);
+    --font-sans: 'Jersey';
+    --font-serif: 'Montserrat';
+    background: var(--background);
+    color: var(--secondary);
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-text {
+    font-family: var(--font-sans), sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 14rem;
+    margin-bottom: 0;
+    transition: color 0.2s ease;
+    color: var(--primary);
+}
+
+.header-block h4 {
+    font-family: var(--font-sans), sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 0;
+    transition: color 0.2s ease;
+    color: var(--primary);
+}
+
+.header-block {
+    text-align: center;
+}
+
+.navbar {
+    font-family: var(--font-sans);
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.nav-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 48px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.arrow span {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid var(--primary);
+    animation: moveDown 1s infinite;
+}
+
+.arrow span:nth-child(1) { animation-delay: 0s; }
+.arrow span:nth-child(2) { animation-delay: 0.2s; }
+.arrow span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes moveDown {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(10px); opacity: 0.5; }
+    100% { transform: translateY(20px); opacity: 0; }
+}
+
+.project-covers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 15rem;
+}
+
+.bergo_cover {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bergo_img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    max-height: 540px;
+    border-radius: 20px;
+    display: block;
+    transition: filter 0.6s ease, box-shadow 0.6s ease;
+    filter: grayscale(100%);
+    margin-top: 1rem;
+}
+
+.bergo_img:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.slides img {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.footer p {
+    font-family: var(--font-sans);
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+}
+
+#pdfContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+embed {
+    margin-top: 10rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 90vh;
+    border: none;
+}
+
+#pdf-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar {
+    display: none;
+}
+
+p.PDF {
+    font-family: var(--font-serif);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    color: var(--secondary);
+    transition: color 0.3s ease;
+}
+
+p {
+    font-family: var(--font-serif);
+    margin-bottom: 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-top: 10rem;
+}
+
+.mast-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    line-height: 30px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  list-style: none;  
+}
+
+.footer-nav a:hover {
+    color: var(--primary);
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.me {
+  max-width: 30vw;
+  max-height: 70vh;
+  margin-left: 10rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--font-sans);
+  font-size: 2.5rem;
+  color: var(--primary);
+  letter-spacing: 3px;
+}
+
+.about-me {
+  display: flex;
+  gap: 30px;
+}
+
+.about-text {
+  font-family: var(--font-serif);
+  max-width: 50vw;
+  line-height: 30px;
+}
+
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.games, .movies, .books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.movies img,
+.books img,
+.games img {
+  width: 300px;
+  height: 418px;
+  object-fit: cover; /* This keeps the image nicely cropped if needed */
+  margin-bottom: 50px;
+}
+
+
+/* Center the form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Style form elements */
+.contact-form label {
+  font-family: var(--font-serif);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--secondary);
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--font-serif);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allows only vertical resizing */
+    min-height: 100px; /* Sets a reasonable default height */
+    max-height: 300px; /* Optional: Limits how tall it can grow */
+}
+
+
+/* Style submit button */
+.contact-form button {
+    background: var(--primary);
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-family: var(--font-serif);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #4a9b26;
+}
+
+.resume_button {
+  display: flex;
+  justify-content: center;
+}
+
+.download_resume {
+  background: var(--primary);
+  color: whitesmoke;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: var(--font-serif);
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.download_resume:hover {
+  background-color: #4a9b26;
+}
+
+
+.image-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover-effect:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.socials img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.resume h3 {
+  text-align: left;
+  margin-bottom: 0;
+  font-family: var(--font-sans);
+  margin-top: 0;
+  font-size: 48px;
+}
+
+.resume-header {
+  font-family: var(--font-sans);
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.resume-education {
+  font-family: var(--font-serif);
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.resume-skills {
+  font-family: var(--font-serif);
+  width: 50rem;
+  margin: 0 auto; 
+}
+
+.resume-experience {
+  font-family: var(--font-serif);
+  width: 50rem;
+  margin: 0 auto; 
+}
+
+.resume-experience2 {
+  font-family: var(--font-serif);
+  width: 50rem;
+  margin: 0 auto; 
+}
+
+h3:first-child {
+  font-size: 48px;
+}
+
+#resume-divider {
+  display: flex;
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+#contact-divider {
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1441px) and (max-width: 3000px) {
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+  }
+
+.about-text {
+  font-family: var(--font-serif);
+  max-width: 35vw;
+  line-height: 30px;
+}
+
+img.me {
+  margin-left: -5rem;
+  max-height: 650px;
+}
+
+.games, .movies, .books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.movies img {
+  max-width: 300px;
+  max-height: 445px;
+  margin-bottom: 50px;
+}
+
+.games img{
+  max-width: 300px;
+  max-height: 445px;
+  margin-bottom: 50px;
+}
+
+.books img {
+  max-width: 300px;
+  max-height: 445px;
+  margin-bottom: 50px;
+}
+
+
+  body {
+    font-size: 1.25rem;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+}
+
+.resume-skills h3 {
+  font-family: var(--font-sans);
+  font-size: 48px;
+}
+
+.plang {
+  font-weight: bold;
+}
+
