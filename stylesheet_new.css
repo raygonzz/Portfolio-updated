@@ -59,6 +59,7 @@ body, ul, li {
     display: flex;
     align-items: center;
     background-color: var(--background);
+    margin-top: 2rem;
 }
 
 .nav-block {
@@ -132,23 +133,6 @@ body, ul, li {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-}
-
-.bergo_img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    max-height: 540px;
-    border-radius: 20px;
-    display: block;
-    transition: filter 0.6s ease, box-shadow 0.6s ease;
-    filter: grayscale(100%);
-    margin-top: 1rem;
-}
-
-.bergo_img:hover {
-    filter: grayscale(0%);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
 }
 
 .slides {
@@ -249,7 +233,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 30rem;
+    max-width: 35rem;
     margin: 0 auto;
     margin-top: 3rem;
     line-height: 30px;
@@ -320,18 +304,15 @@ h2 {
 .games img {
   width: 300px;
   height: 418px;
-  object-fit: cover; /* This keeps the image nicely cropped if needed */
+  object-fit: cover;
   margin-bottom: 50px;
 }
 
-
-/* Center the form */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
 }
 
-/* Style form elements */
 .contact-form label {
   font-family: var(--font-serif);
     display: block;
@@ -352,16 +333,14 @@ h2 {
 }
 
 .contact-form textarea {
-    resize: vertical; /* Allows only vertical resizing */
-    min-height: 100px; /* Sets a reasonable default height */
-    max-height: 300px; /* Optional: Limits how tall it can grow */
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
 }
 
-
-/* Style submit button */
 .contact-form button {
     background: var(--primary);
-    color: whitesmoke;
+    color: black;
     border: none;
     padding: 10px 15px;
     font-size: 18px;
@@ -383,7 +362,7 @@ h2 {
 
 .download_resume {
   background: var(--primary);
-  color: whitesmoke;
+  color: black;
   border: none;
   padding: 10px 15px;
   font-size: 18px;
@@ -408,8 +387,8 @@ h2 {
 }
 
 .image-hover-effect:hover {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .socials img {
@@ -430,7 +409,7 @@ h2 {
   margin-bottom: 0;
   font-family: var(--font-sans);
   margin-top: 0;
-  font-size: 48px;
+  font-size: 41px;
 }
 
 .resume-header {
@@ -464,7 +443,7 @@ h2 {
 }
 
 h3:first-child {
-  font-size: 48px;
+  font-size: 41px;
 }
 
 #resume-divider {
@@ -478,7 +457,7 @@ h3:first-child {
   }
 
 #contact-divider {
-    width: 50%;
+    width: 60%;
     height: 2px;
     background-color: var(--primary);
     margin: 0 auto;
@@ -539,10 +518,112 @@ img.me {
 
 .resume-skills h3 {
   font-family: var(--font-sans);
-  font-size: 48px;
+  font-size: 41px;
 }
 
 .plang {
   font-weight: bold;
 }
 
+.bergo_image {
+    width: 812px;
+    height: 500px;
+    border-radius: 5px;
+    background: #FF464A;
+    transition: filter 0.6s ease, box-shadow 0.6s ease;
+    filter: grayscale(100%);
+    margin-bottom: 3rem;
+}
+
+.bergo_image:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+
+.bergo_image h4 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    color:  white;
+    width: 600px;
+    margin:  0 auto;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.bergo_goal {
+    font-family: var(--font-serif);
+    font-size: 21px;
+    width: 600px;
+    margin:  0 auto;
+    color: white;
+    text-align: left;
+}
+
+.bergo_solo {
+    font-family: var(--font-serif);
+    font-size: 21px;
+    width: 600px;
+    text-align: left;
+    margin:  0 auto;
+    color: white;
+    margin-top: 7rem;
+}
+
+.league_image h4 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    color:  white;
+    width: 600px;
+    margin:  0 auto;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.league_image {
+    width: 812px;
+    height: 500px;
+    border-radius: 5px;
+    background: #0A1428;
+    transition: filter 0.6s ease, box-shadow 0.6s ease;
+    filter: grayscale(100%);
+    margin-bottom: 3rem;
+}
+
+.league_image:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.front_buttons {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: var(--font-serif);
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 200px;
+  height: 40px;
+  transition: background 0.3s ease-in-out;
+}
+
+.buttons {
+    margin-left: 7rem;
+}
+
+.buttons button:hover {
+    background: gray;
+}
+
+a {
+    text-decoration: none;
+}
