@@ -521,10 +521,6 @@ img.me {
   font-size: 41px;
 }
 
-.plang {
-  font-weight: bold;
-}
-
 .bergo_image {
     width: 812px;
     height: 500px;
@@ -626,4 +622,13 @@ img.me {
 
 a {
     text-decoration: none;
+}
+
+h5 {
+    margin: 0 auto;
+    font-family: var(--font-serif);
+    width: 600px;
+    text-align: left;
+    color: white;
+    margin-top: 0.5rem;
 }
