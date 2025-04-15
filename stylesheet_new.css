@@ -530,6 +530,23 @@ img.me {
     filter: grayscale(100%);
     margin-bottom: 3rem;
     position: relative;
+    overflow: hidden;
+}
+
+.bergo_image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('Graphics/bergo_cover.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.bergo_image > * {
+    position: relative;
+    z-index: 1;
 }
 
 .bergo_image:hover {
@@ -587,6 +604,24 @@ img.me {
     transition: filter 0.6s ease, box-shadow 0.6s ease;
     filter: grayscale(100%);
     margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.league_image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('Graphics/league_cover.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* 20% opacity */
+    z-index: 0;
+}
+
+.league_image > * {
+    position: relative;
+    z-index: 1;
 }
 
 .league_image:hover {
