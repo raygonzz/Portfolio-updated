@@ -3,22 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Raymond Gonzalez Portfolio</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="stylesheet_new.css">
 </head>
 <body>
-	<div class="nav-block">
-		<nav class="navbar">
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
-	<h2>About Me</h2>
+<div class="nav-block">
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger">☰</span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</div>
+	<header class="about-header">About Me</header>
 	<div class="about-me">
 		<img class="me" src="Graphics/me.jpg" alt="picture of Raymond Gonzalez">
 		<p class="about-text">I was first introduced to the field of UI/UX a couple of years ago while working as an electrical engineering intern. While I appreciated the many, and I mean many, technical challenges, I quickly realized that the analytical nature of the work wasn’t fulfilling my creative side. I wanted to blend my problem solving skills with design, which led me to discover UI/UX. The idea of crafting intuitive and visually engaging digital experiences excited me in a way engineering never had, and from that moment, I knew I had found the right path.
@@ -32,6 +36,18 @@
 	</div>
 	<div class="section-divider"></div>
 	<h2>Favorite Games</h2>
+
+	<div class="carousel-container">
+		  <button class="carousel-button prev" aria-label="Previous">&#10094;</button>
+		  <div class="carousel-track">
+			    <img src="Graphics/ff.jpg" alt="Final Fantasy" class="carousel-image">
+			    <img src="Graphics/league-cover.jpg" alt="League of Legends" class="carousel-image">
+			    <img src="Graphics/baldur.jpg" alt="Baldur's Gate 3" class="carousel-image">
+			    <img src="Graphics/borderlands.webp" alt="Borderlands 2" class="carousel-image">
+		  </div>
+		  <button class="carousel-button next" aria-label="Next">&#10095;</button>
+	</div>
+
 	<div class="games">
 		<img src="Graphics/ff.jpg" alt="Final Fantasy Cover Art" class="image-hover-effect">
 		<img src="Graphics/league-cover.jpg" alt="league of legends Cover Art" class="image-hover-effect">
@@ -40,6 +56,18 @@
 	</div>
 	<div class="section-divider"></div>
 	<h2>Favorite Movies</h2>
+
+	<div class="carousel-container">
+		 <button class="carousel-button prev" aria-label="Previous">&#10094;</button>
+		  <div class="carousel-track">
+			    <img src="Graphics/bladerunner.jpg" alt="Blade Runner 2049 Cover Art" class="carousel-image">
+			    <img src="Graphics/greenknight.jpg" alt="The Green Knight Cover Art" class="carousel-image">
+			    <img src="Graphics/rat.jpg" alt="Ratatouille cover art" class="carousel-image">
+			    <img src="Graphics/saltburn.jpg" alt="Saltburn Cover Art" class="carousel-image">
+		  </div>
+		  <button class="carousel-button next" aria-label="Next">&#10095;</button>
+	</div>
+
 	<div class="movies">
 		<img src="Graphics/bladerunner.jpg" alt="Blade Runner 2049 Cover Art" class="image-hover-effect">
 		<img src="Graphics/greenknight.jpg" alt="The Green Knight Cover Art" class="image-hover-effect">
@@ -48,6 +76,19 @@
 	</div>
 	<div class="section-divider"></div>
 	<h2>Favorite Books</h2>
+
+		<div class="carousel-container">
+		 <button class="carousel-button prev" aria-label="Previous">&#10094;</button>
+		  <div class="carousel-track">
+			    <img src="Graphics/poison.jpg" alt="This Poison Heart Cover Art" class="carousel-image">
+			    <img src="Graphics/harry.jpg" alt="Harry Potter Cover Art" class="carousel-image">
+			    <img src="Graphics/percyj.jpg" alt="Percy Jackson Cover Art" class="carousel-image">
+			    <img src="Graphics/hero.jpg" alt="The Lost Hero cover art" class="carousel-image">
+		  </div>
+		  <button class="carousel-button next" aria-label="Next">&#10095;</button>
+	</div>
+
+	
 	<div class="books">
 		<img src="Graphics/poison.jpg" alt="This Poison Heart Cover Art" class="image-hover-effect">
 		<img src="Graphics/harry.jpg" alt="Harry Potter Cover Art" class="image-hover-effect">
@@ -62,5 +103,6 @@
             <li><a href="https://github.com/raygonzz" target="_blank">GitHub</a></li>
         </ul>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

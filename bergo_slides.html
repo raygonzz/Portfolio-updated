@@ -3,20 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Raymond Gonzalez Portfolio</title>
 	<link rel = "stylesheet" href = "normalize.css">
 	<link rel = "stylesheet" href="stylesheet_new.css"></head>
 <body>
-    <div class="nav-block">
+<div class="nav-block">
         <nav class="navbar">
-            <ul class="nav-links">
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger">☰</span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
+</div>
+
 
 	<div id="pdfContainer">
 	    <embed src="Bergo.pdf#toolbar=0" type="application/pdf" />
@@ -37,6 +42,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 <script src="main.js"></script>
 </body>
-
-
 </html>

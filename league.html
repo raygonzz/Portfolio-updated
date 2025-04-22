@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raymond Gonzalez Portfolio</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet_new.css">
     <link rel="icon" type="image/x-icon" href="path/to/favicon.ico">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js" crossorigin="anonymous"></script><body>
-
-    <div class="header">
-    <div class="nav-block">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    </div>
+        <div class="nav-block">
+                <nav class="navbar">
+                    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                        <span class="hamburger">☰</span>
+                    </button>
+                    <ul class="nav-links" id="primary-navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
 
 	<div id="pdfContainer">
 	    <embed src="slides.pdf#toolbar=0" type="application/pdf" />
@@ -34,5 +34,6 @@
             <li><a href="https://github.com/raygonzz" target="_blank">GitHub</a></li>
         </ul>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
