@@ -1,31 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raymond Gonzalez Portfolio</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="stylesheet_new.css">
-    <link rel="icon" type="image/x-icon" href="path/to/favicon.ico">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js" crossorigin="anonymous"></script><body>
-        <div class="nav-block">
-                <nav class="navbar">
-                    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
-                        <span class="hamburger">☰</span>
-                    </button>
-                    <ul class="nav-links" id="primary-navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-        </div>
+    <link rel = "stylesheet" href = "normalize.css">
+    <link rel = "stylesheet" href="stylesheet_new.css"></head>
+<body>
+<div class="nav-block">
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger">☰</span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</div>
 
-	<div id="pdfContainer">
-	    <embed src="slides.pdf#toolbar=0" type="application/pdf" />
-	</div>
+<div class="league_CS">
+    <h1>League of Legends | Zodiac Calendar</h1>
+    <h2>Front-End Development Case Study</h2>
+    <p>The goal of this project was to create a website which showcases 12 different Zodiac signs using different League of Legends characters.</p>
+    <div class="buttons">
+        <a href="https://github.com/raygonzz/idm231_rg938" target="_blank">
+            <button class="front_buttons" type="button">
+                GitHub Repo
+            </button>
+        </a>
+        <a href="https://leagueoflegendszodiac.netlify.app/" target="_blank">
+            <button class="front_buttons" type="button">
+                Live Site
+            </button>
+        </a>
+    </div>
+</div>
+<div class="case_study">
+    <div class="league_problem">
+        <h1>Problem Statment</h1>
+        <p>The project was created to provide a fun, interactive way for users to discover which League of Legends champion aligns with their zodiac sign based on their birthday. There was no existing tool combining zodiac signs and LoL champions so this project aimed to fill that gap.</p>
+    </div>
+    <div class="league_role">
+        <h1>My Role</h1>
+        <p>This was a solo project where I handled everything from initial design to final deployment. I created wireframes and a prototype in Figma, then built the site using HTML, CSS, and JavaScript. I was responsible for both the design and development.</p>
+    </div>
+    <div class="league_tech">
+        <h1>Technology Used</h1>
+        <p>The site was built using HTML for structure, CSS for styling and layout, and JavaScript to handle user input and zodiac logic. Figma was used for designing the interface, and all code was managed and versioned through GitHub. No additional frameworks or libraries were used.</p>
+    </div>
+    <div class="league_outcome">
+        <h1>Results & Outcome</h1>
+        <p>The final product successfully delivered an interactive tool that matched users to champions based on their birthday. It met its goals of combining entertainment with clean UI/UX. A key takeaway was how effective simple logic and intuitive design can be in creating engaging user experiences..</p>
+    </div>
+</div>
+
 
     <footer class="footer">
         <p>Made by Raymond Gonzalez</p>
@@ -34,6 +66,7 @@
             <li><a href="https://github.com/raygonzz" target="_blank">GitHub</a></li>
         </ul>
     </footer>
-    <script src="main.js"></script>
+    
+<script src="main.js"></script>
 </body>
 </html>

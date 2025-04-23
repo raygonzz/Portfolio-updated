@@ -471,6 +471,195 @@ h2 {
   font-size: 41px;
 }
 
+.bergo_CS, .league_CS {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.league_CS {
+    border-top:  3px solid #0A1428;
+}
+
+.bergo_CS {
+    border-top: 3px solid #FF464A;
+}
+
+.league_CS h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-serif);
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 2.5rem;
+}
+
+.bergo_CS h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-serif);
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 2.5rem;
+}
+
+.league_CS p {
+    text-align: left;
+    color: white;
+    font-family: var(--font-serif);
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.bergo_CS p {
+    text-align: left;
+    color: white;
+    font-family: var(--font-serif);
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.league_CS h2 {
+    color: white;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.bergo_CS h2 {
+    color: white;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.league_CS .buttons {
+    text-align: center;
+    margin: 0;
+}
+
+.bergo_CS .buttons {
+    text-align: center;
+    margin: 0;
+}
+
+.case_study {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.bergo_problem, .bergo_role, .bergo_tech, .bergo_outcome,  .league_problem, .league_role, .league_tech, .league_outcome{
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-top: 2rem;
+  transition: border-color 0.6s ease;
+}
+
+.bergo_problem, .bergo_role, .bergo_tech, .bergo_outcome {
+  border-top: 3px solid #FF464A;
+}
+
+.league_problem, .league_role, .league_tech, .league_outcome {
+  border-top: 3px solid #0A1428;
+}
+
+
+.bergo_problem::before,
+.bergo_role::before,
+.bergo_tech::before,
+.bergo_outcome::before, .bergo_CS::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #FF464A, var(--background));
+  opacity: 0.1;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+  border-radius: 15px;
+}
+
+.league_problem::before,
+.league_role::before,
+.league_tech::before,
+.league_outcome::before, .league_CS::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0A1428, var(--background));
+  opacity: 0.3;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+  border-radius: 15px;
+}
+
+.league_problem:hover::before,
+.league_role:hover::before,
+.league_tech:hover::before,
+.league_outcome:hover::before {
+  opacity: 1;
+}
+
+.bergo_problem:hover::before,
+.bergo_role:hover::before,
+.bergo_tech:hover::before,
+.bergo_outcome:hover::before {
+  opacity: 0.5;
+}
+
+.league_problem > *, 
+.league_role > *, 
+.league_tech > *, 
+.league_outcome > *,
+.league_CS > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bergo_problem > *, 
+.bergo_role > *, 
+.bergo_tech > *, 
+.bergo_outcome > *,
+.bergo_CS > * {
+  position: relative;
+  z-index: 1;
+}
+
+.case_study h1 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+.case_study p {
+    color: white;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    line-height: 30px;
+}
+
 .bergo_image {
     width: 812px;
     height: 500px;
