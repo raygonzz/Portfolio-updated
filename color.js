@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const viewer = document.querySelector('.pdf-viewer');
+    if (viewer) {
+        const toolbar = viewer.querySelector('.toolbar');
+        if (toolbar) {
+            toolbar.style.display = 'none';
+        }
+    }
+});
+
 document.addEventListener("mousemove", function(event) {
     let x = event.clientX / window.innerWidth;
     let y = event.clientY / window.innerHeight;
@@ -8,4 +18,5 @@ document.addEventListener("mousemove", function(event) {
 
     document.querySelector(".header-text").style.color = `rgb(${red}, ${green}, ${blue})`;
     document.querySelector(".header-text2").style.color = `rgb(${red}, ${green}, ${blue})`;
+
 });

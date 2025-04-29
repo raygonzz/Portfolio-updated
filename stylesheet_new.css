@@ -272,6 +272,7 @@ h2 {
 .about-me {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .about-header {
@@ -287,6 +288,35 @@ h2 {
   max-width: 50vw;
   line-height: 30px;
 }
+
+@media screen and (min-width: 1800px) {
+
+  .about-text {
+    font-family: var(--font-serif);
+    max-width: 30vw;
+    line-height: 30px;
+  }
+
+  .about-me {
+    margin-top: 3rem;
+  }
+
+  .me {
+    max-height: 600px
+  }
+
+  #resume-divider {
+    display: flex;
+    width: 35%;
+    height: 2px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
 
 .section-divider {
     width: 65%;
@@ -456,7 +486,7 @@ h2 {
   margin: 0 auto; 
 }
 
-#resume-divider {
+#contact-divider {
   display: flex;
     width: 50%;
     height: 2px;
