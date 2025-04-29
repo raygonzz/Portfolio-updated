@@ -255,9 +255,8 @@ p {
 }
 
 .me {
-  max-width: 30vw;
-  max-height: 70vh;
-  margin-left: 10rem;
+  max-width: 400px;
+  max-height: 700px;
 }
 
 h2 {
@@ -273,6 +272,7 @@ h2 {
   display: flex;
   gap: 30px;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .about-header {
@@ -285,7 +285,7 @@ h2 {
 
 .about-text {
   font-family: var(--font-serif);
-  max-width: 50vw;
+  max-width: 40vw;
   line-height: 30px;
 }
 
