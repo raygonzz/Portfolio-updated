@@ -12,6 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Lexend';
+    src: url(Fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto-Sans';
+    src: url(Fonts/Lexend/Lexend-VariableFont_wght.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
 html {
     --background: #26262c;
     --primary: #73f440;
@@ -1133,3 +1147,36 @@ h5 {
 
 }
 
+.Lexend {
+    font-family: 'Lexend';
+}
+
+.Noto_Sans {
+    font-family: 'Noto-Sans';
+}
+
+.red {
+    background: #FF646A;
+}
+
+.gray {
+    background: #3d3d3d;
+}
+
+.white {
+    background: #FFFFFF;
+    color: black;
+}
+
+.gold {
+    background: #C89B3C;
+}
+
+.tan {
+    background: #A09B8C;
+    color: black;
+}
+
+.navy {
+    background: #010A13;
+}
